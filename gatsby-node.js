@@ -78,8 +78,6 @@ exports.createPages = ({ graphql, actions }) => {
 
           const year = post.node.frontmatter.date;
 
-          console.log(`\nRedirect fom: /${year}${slug.replace(/\/$/, '')}, to: ${slug}\n`);
-
           // Redirect /2015/foo/ -> /foo/
           // NOTE: maintains trailing slash
           createRedirect({
