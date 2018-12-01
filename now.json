@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "Jes.st",
+  "alias": ["jes.st"],
+  "github": {
+    "enabled": true
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public",
+        "useBuildUtils": "@now/build-utils@canary"
+      }
+    }
+  ]
+}
