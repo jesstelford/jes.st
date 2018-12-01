@@ -9,7 +9,10 @@
     {
       "src": "package.json",
       "use": "@now/static-build",
-      "config": { "distDir": "public" }
+      "config": {
+        "distDir": "public",
+        "useBuildUtils": "@now/build-utils@canary"
+      }
     }
   ]
 }
