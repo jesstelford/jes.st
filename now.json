@@ -5,5 +5,11 @@
   "github": {
     "enabled": true
   },
-  "builds": [{ "src": "package.json", "use": "@now/static-build", "config": { "distDir": "public" } }]
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ]
 }
